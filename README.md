@@ -10,4 +10,6 @@ Order presented
   * Believe it or not, this covers linear regression and orthogonalization.  The focus is on parameter interpretation in simple linear regression, regression with a categorical and a continuous covariate and 2 continuous covariates.  What does mean centering really do??  Is orthogonalization the answer to all of our collinearity problems? (Spoiler, the answer is NO)
 * (Oct 18, 2023, time permitting) Suppression and colliders
       * This covers suppression, with a cool table I found (originally made by Cohen) that breaks down the settings that lead to all of the different types of suppression.  I also dig into colliders.  They're a little scary and are why we see headlines like, "Multiple studies find obsesity has a protective effect against mortality in patients with cardiovascular disease".  Really?!?  Many Covid study headlines were likely also driven by colliders (smoking has a protective effect?!?!).
+* (Oct 24, 2024) fmri_regressors.ipynb
+    * This covers convolution, parametric modulation, modeling RT overview and using VIF to assess collinearity of your regressors and contrasts.
   
