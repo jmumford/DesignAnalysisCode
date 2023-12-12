@@ -324,7 +324,7 @@ def est_eff_and_vif(events, tr, total_time, contrasts):
     # For VIF it is necessary to remove the extra TRs at the end (if nothing is happening)
     #  This assumes there are extra TRs added to retain a consistent scan length across 
     # different models that are being compared
-    scan_cutoff = int(np.floor((events.onset.values[-1:][0] + events.duration.values[-1:][0] + 20))/tr)
+    scan_cutoff = np.floor((events.onset.values[-1:][0] + events.duration.values[-1:][0] + 20))
     desmat_trimmed = desmat.loc[:scan_cutoff, :]
     vifs = get_all_contrast_vif(desmat_trimmed, contrasts)
     return eff_out, vifs, desmat
